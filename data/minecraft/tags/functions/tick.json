@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "dorian_et_binau:lobby/lobby_main"
+        "ir:tick"
     ]
 }

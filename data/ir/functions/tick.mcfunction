@@ -1,0 +1,1 @@
+function ir:game/snowball
