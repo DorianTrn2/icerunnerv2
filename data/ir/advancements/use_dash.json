@@ -1,0 +1,24 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:fishing_rod"
+            ],
+            "enchantments": [
+              {
+                "enchantment": "minecraft:vanishing_curse",
+                "levels": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ir:game/powerups/dazeash/summon"
+    }
+  }
+  

@@ -7,4 +7,5 @@ execute as @e[tag=dashentity,tag=!dashentitymotion] at @s rotated as @a[tag=dash
 ride @s mount @e[type=silverfish,tag=dashentity,limit=1,sort=nearest]
     
 tag @s remove dashthrower
-clear @s fishing_rod 1
+clear @s fishing_rod{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
+advancement revoke @s only ir:use_dash
