@@ -1,0 +1,1 @@
+execute as @a[tag=dashthrower] run function ir:game/powerups/dash/summon

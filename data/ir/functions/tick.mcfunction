@@ -1,4 +1,4 @@
-function ir:game/snowball
+execute as @e[type=snowball] at @s run function ir:game/snowball
 function ir:game/arrow
 
 
