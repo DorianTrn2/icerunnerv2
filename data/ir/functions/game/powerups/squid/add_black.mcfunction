@@ -1,6 +1,8 @@
 tag @s add blinded
-effect give @s darkness 5 10 true
-execute at @s run particle squid_ink ~ ~ ~ 0.1 0.1 0.1 2 50 force
+effect give @s darkness 4 10 true
+effect give @s blindness 4 10 true
+effect give @s speed 4 0 true
+execute at @s run particle squid_ink ~ ~ ~ 0.3 0.3 0.3 2 50 force
 execute at @s run playsound ambient.underwater.enter master @s ~ ~ ~ 1 0.8
 execute at @s run playsound ambient.underwater.enter master @s ~ ~ ~ 1 0.7
 execute at @s run playsound minecraft:entity.slime.hurt_small master @s ~ ~ ~ 1 0

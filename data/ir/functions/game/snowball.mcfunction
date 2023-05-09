@@ -11,3 +11,4 @@ execute if score @s snowlive matches ..38 run setblock ~ ~-2 ~ blue_ice keep
 execute if score @s snowlive matches ..38 run summon marker ~ ~-2 ~ {Tags:["iceblock"]} 
 particle minecraft:dust 0.761 0.957 0.965 0.5 ~ ~ ~ 0.5 0.5 0.5 10 5 force
 playsound minecraft:block.amethyst_cluster.step master @a ~ ~ ~ 0.1 2
+

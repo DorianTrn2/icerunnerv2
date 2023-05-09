@@ -9,8 +9,6 @@ execute at @s run playsound minecraft:entity.slime.hurt_small master @s ~ ~ ~ 1 
 execute at @s run playsound minecraft:entity.slime.hurt_small master @s ~ ~ ~ 1 0.7
 execute at @s run playsound minecraft:entity.slime.hurt master @s ~ ~ ~ 1 0.4
 execute at @s run playsound minecraft:entity.slime.hurt master @s ~ ~ ~ 1 0.2
-execute at @s run kill @e[type=squid,tag=blind_squid,limit=1,sort=nearest]
-kill @e[type=item,nbt={Item:{id:"minecraft:ink_sac"}}]
-advancement revoke @s only ir:blind
+execute at @s run kill @e[type=armor_stand,tag=blind_squid,limit=1,sort=nearest]
 
 

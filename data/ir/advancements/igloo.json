@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:squid_spawn_egg"
+            "minecraft:polar_bear_spawn_egg"
           ]
         },
         "location": {}
@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "ir:game/powerups/squid/check"
+    "function": "ir:game/powerups/igloo/check"
   }
 }
