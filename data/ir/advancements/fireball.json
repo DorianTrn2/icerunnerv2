@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:fire_charge"
+          ]
+        },
+        "location": {}
+      }
+    }
+  },
+  "rewards": {
+    "function": "ir:game/powerups/fireball/check"
+  }
+}

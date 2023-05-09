@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+            "item": {
+                "items": [
+                    "minecraft:ender_eye"
+                ]
+            }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ir:game/powerups/dashv2/main"
+    }
+  }
+  

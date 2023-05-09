@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:shulker_spawn_egg"
+          ]
+        },
+        "location": {}
+      }
+    }
+  },
+  "rewards": {
+    "function": "ir:game/powerups/swap/check"
+  }
+}
