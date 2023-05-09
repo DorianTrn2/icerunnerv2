@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:potion"
+            ],
+            "nbt": "{CustomPotionEffects:[{Id:30,Duration:8,Amplifier:10}]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ir:game/powerups/frost_walker/setup"
+    }
+  }
+  

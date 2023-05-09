@@ -1,3 +1,8 @@
+playsound block.anvil.destroy master @a ~ ~ ~ 0.4 0.8
+playsound block.glass.break master @a ~ ~ ~ 0.4 0.8
+playsound block.glass.break master @a ~ ~ ~ 0.4 0.6
+playsound block.glass.break master @a ~ ~ ~ 0.4 0.4
+
 summon marker ~-3 ~ ~-1 {Tags:["tempigloo"]}
 summon marker ~-3 ~ ~1 {Tags:["tempigloo"]}
 summon marker ~-3 ~ ~ {Tags:["tempigloo"]}
