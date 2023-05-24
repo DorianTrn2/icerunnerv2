@@ -1,0 +1,137 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:squid_spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "minecraft:copy_nbt",
+                        "source": {
+                            "type": "minecraft:storage",
+                            "source": "ir:data"
+                        },
+                        "ops": [
+                            {
+                                "source": "Items.blind.tag",
+                                "target": "{}",
+                                "op": "merge"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:fishing_rod",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "minecraft:copy_nbt",
+                        "source": {
+                            "type": "minecraft:storage",
+                            "source": "ir:data"
+                        },
+                        "ops": [
+                            {
+                                "source": "Items.dash.tag",
+                                "target": "{}",
+                                "op": "merge"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:fire_charge",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "minecraft:copy_nbt",
+                        "source": {
+                            "type": "minecraft:storage",
+                            "source": "ir:data"
+                        },
+                        "ops": [
+                            {
+                                "source": "Items.fireball.tag",
+                                "target": "{}",
+                                "op": "merge"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:potion",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "minecraft:copy_nbt",
+                        "source": {
+                            "type": "minecraft:storage",
+                            "source": "ir:data"
+                        },
+                        "ops": [
+                            {
+                                "source": "Items.frost_walker.tag",
+                                "target": "{}",
+                                "op": "merge"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:polar_bear_spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "minecraft:copy_nbt",
+                        "source": {
+                            "type": "minecraft:storage",
+                            "source": "ir:data"
+                        },
+                        "ops": [
+                            {
+                                "source": "Items.igloo.tag",
+                                "target": "{}",
+                                "op": "merge"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:shulker_spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "minecraft:copy_nbt",
+                        "source": {
+                            "type": "minecraft:storage",
+                            "source": "ir:data"
+                        },
+                        "ops": [
+                            {
+                                "source": "Items.swap.tag",
+                                "target": "{}",
+                                "op": "merge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+      }
+    ]
+  }
+  

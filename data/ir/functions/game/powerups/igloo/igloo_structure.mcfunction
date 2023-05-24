@@ -1,4 +1,4 @@
-playsound block.anvil.destroy master @a ~ ~ ~ 0.4 0.8
+playsound minecraft:block.anvil.use master @a ~ ~ ~ 0.4 2
 playsound block.glass.break master @a ~ ~ ~ 0.4 0.8
 playsound block.glass.break master @a ~ ~ ~ 0.4 0.6
 playsound block.glass.break master @a ~ ~ ~ 0.4 0.4

@@ -4,6 +4,14 @@
 #scoreboard objectives remove blocklive
 #scoreboard objectives remove dash
 #scoreboard objectives remove fireball 
+scoreboard objectives remove Points
+scoreboard objectives remove non_player
+scoreboard objectives remove capture
+scoreboard objectives remove death
+scoreboard objectives remove deathTimer
+scoreboard objectives remove deathTimer
+scoreboard objectives remove killStreak
+
 
 scoreboard objectives remove motion_x1
 scoreboard objectives remove motion_y1
@@ -25,11 +33,30 @@ scoreboard objectives add motion_x2 dummy
 scoreboard objectives add motion_y2 dummy
 scoreboard objectives add motion_z2 dummy
 
-#--- GAMERULES ---#
+scoreboard objectives add Points dummy
+scoreboard objectives add non_player dummy
+scoreboard objectives add capture dummy
+scoreboard objectives add death deathCount
+scoreboard objectives add deathTimer dummy
+scoreboard objectives add deathTimer2 dummy
+scoreboard objectives add killStreak playerKillCount
 
+#--- SCOREBOARD PARAMETERS ---#
+scoreboard players set Goal Points 1000
+scoreboard players set ItemsPer30s_target Points 2
+scoreboard players set 10div non_player 20
+scoreboard players set randomtp_scale_xz non_player 60
+scoreboard players set randomtp_remove_xz non_player 30
+
+scoreboard players set randomtp_scale_y non_player 20
+scoreboard players set randomtp_add_y non_player 30
+
+
+
+#--- GAMERULES ---#
 gamerule fallDamage false
 gamerule commandBlockOutput false
-
+gamerule doImmediateRespawn true
 
 function ir:game/schedule_1s
 tellraw @a [{"text":"[","color":"white"},{"text":"IceRun","color":"aqua"},{"text":"] LOADED : ","color":"white"},{"text":"Ice Runner","color":"aqua"},{"text":" V2 ","color":"white"},{"text":"by Doriantrn, Binau & Sehnryr.","color":"gray"}]
