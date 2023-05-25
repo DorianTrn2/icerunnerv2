@@ -12,7 +12,7 @@
       }
     },
     "rewards": {
-      "function": "ir:game/powerups/dashv2/main"
+      "function": "ir:game/powerups/platform/main"
     }
   }
   

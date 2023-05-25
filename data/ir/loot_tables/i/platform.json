@@ -16,7 +16,7 @@
 							},
 							"ops": [
 								{
-									"source": "Items.dashv2.tag",
+									"source": "Items.platform.tag",
 									"target": "{}",
 									"op": "merge"
 								}

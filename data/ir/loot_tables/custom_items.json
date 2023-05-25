@@ -129,6 +129,27 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:ender_eye",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "minecraft:copy_nbt",
+                        "source": {
+                            "type": "minecraft:storage",
+                            "source": "ir:data"
+                        },
+                        "ops": [
+                            {
+                                "source": "Items.platform.tag",
+                                "target": "{}",
+                                "op": "merge"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
       }
