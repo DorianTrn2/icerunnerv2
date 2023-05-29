@@ -1,6 +1,11 @@
 #make irore not overflowing
 execute if score @s capture matches 120.. run scoreboard players set @s capture 120
 execute if score @s capture matches ..-120 run scoreboard players set @s capture -120
+tag @e[type=armor_stand,tag=Point] remove Green
+tag @e[type=armor_stand,tag=Point] remove Orange
+tag @e[type=armor_stand,tag=Point,scores={capture=-120}] add Orange
+tag @e[type=armor_stand,tag=Point,scores={capture=120}] add Green
+
 execute at @s if entity @a[team=orange,distance=..3] run particle dust 0.961 0.627 0.047 0.5 ~ ~ ~ 2 3 2 0.1 6 force @a[distance=..8]
 execute at @s if entity @a[team=green,distance=..3] run particle dust 0.259 0.961 0.047 0.5 ~ ~ ~ 2 3 2 0.1 6 force @a[distance=..8]
 function ir:game/control/pointcount
