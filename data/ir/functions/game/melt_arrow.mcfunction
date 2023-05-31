@@ -9,5 +9,4 @@ execute on origin run tag @s add melt_damage
 execute at @s as @a[team=green,distance=..2] run damage @s 1 arrow by @a[tag=melt_damage,team=orange,limit=1]
 execute at @s as @a[team=orange,distance=..2] run damage @s 1 arrow by @a[tag=melt_damage,team=green,limit=1]
 execute on origin run tag @s remove melt_damage
-#fill ~-2 ~-2 ~-2 ~2 ~2 ~2 air replace #ice
 kill @s

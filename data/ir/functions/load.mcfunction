@@ -91,3 +91,10 @@ data modify storage ir:data Items.swap set value {id:"minecraft:shulker_spawn_eg
 data modify storage ir:data Items.platform set value {id: "minecraft:ender_eye",Count:1b,tag:{display:{Name:'[{"text":"Platform","italic":false,"color":"green"}]',Lore:['[{"text":"Place a platform underneath you.","italic":true,"color":"gray"}]']}}}
 data modify storage ir:data Items.fireball set value {id: "minecraft:fire_charge",Count:1b,tag:{CanPlaceOn:['#ir:ir_blocks'],HideFlags:16,display:{Name:'[{"text":"Fireball","italic":false,"color":"red"}]',Lore:['[{"text":"Summon a fireball. Shoot it to melt ice on its way.","italic":true,"color":"gray"}]']}}}
 data modify storage ir:data Items.frost_walker set value {id:"potion", tag:{HideFlags:127,CustomPotionColor:8380922,CustomPotionEffects:[{Id:30,Duration:8,Amplifier:10}],display:{Name:'[{"text":"Ice Skating","italic":false,"color":"green"}]',Lore:['[{"text":"Place ice block underneath (8s).","italic":true,"color":"gray"}]']}}}
+
+#--- BORDER ---#
+
+worldborder center 0 0
+worldborder set 100 0
+
+
