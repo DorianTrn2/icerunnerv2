@@ -7,3 +7,4 @@ execute as @a[scores={death=1}] run function ir:game/death_handle/death_handle0
 
 kill @a[x=-50,z=-50,y=-50,dx=100,dz=100,dy=5]
 kill @a[x=-50,z=-50,y=220,dx=100,dz=100,dy=5]
+fill -51 -30 -51 51 150 51 air replace water

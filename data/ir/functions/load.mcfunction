@@ -45,11 +45,10 @@ scoreboard objectives add killStreak playerKillCount
 
 #--- SCOREBOARD PARAMETERS ---#
 scoreboard players set game_started non_player 0
-scoreboard players set Goal Points 1000
+scoreboard players set Goal Points 5000
 scoreboard players set ORANGE Points 0
 scoreboard players set GREEN Points 0
-team join orange ORANGE
-team join green GREEN
+
 scoreboard players set ItemsPer30s_target non_player 2
 scoreboard players set 10div non_player 20
 scoreboard players set randomtp_scale_xz non_player 60
@@ -71,15 +70,18 @@ tellraw @a [{"text":"[","color":"white"},{"text":"IceRun","color":"aqua"},{"text
 #--- TEAMS ---#
 team remove orange
 team remove green
+team remove spawn
 team add orange
 team add green
+team add spawn
 team modify orange color gold
 team modify green color green
 team modify orange friendlyFire false
 team modify green friendlyFire false
 team modify orange collisionRule never
 team modify green collisionRule never
-
+team join orange ORANGE
+team join green GREEN
 #--- REGISTERS ---#
 data remove storage ir:data Items
 
@@ -95,6 +97,18 @@ data modify storage ir:data Items.frost_walker set value {id:"potion", tag:{Hide
 #--- BORDER ---#
 
 worldborder center 0 0
-worldborder set 100 0
+worldborder set 101
 
 
+schedule clear ir:game/powerups_summon
+schedule clear ir:game/schedule_1s
+schedule clear ir:game/schedule_10s
+
+difficulty easy
+
+
+kill @e[type=villager,tag=rules_tag]
+summon villager 9.5 229 -8.5 {Invulnerable:1b,Silent:1b,Tags:["rules_tag"],CustomName:'{"text":"Rules","color":"aqua","italic":true}',CustomNameVisible:1b,VillagerData:{profession:"minecraft:librarian",type:"minecraft:snow"},Attributes:[{Name:generic.movement_speed,Base:0}]}
+
+kill @e[type=villager,tag=start_tag]
+summon villager -8.5 229 9.5 {Invulnerable:1b,Silent:1b,Tags:["start_tag"],CustomName:'{"text":"Start","color":"red","bold":true}',CustomNameVisible:1b,VillagerData:{profession:"minecraft:nitwit",type:"minecraft:snow"},Attributes:[{Name:generic.movement_speed,Base:0}]}
