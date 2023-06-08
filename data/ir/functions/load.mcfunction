@@ -1,3 +1,6 @@
+#--- FORCELOAD ---#
+forceload add -50 -50 50 50
+
 #--- SCOREBOARDS ---#
 
 #scoreboard objectives remove snowlive
@@ -11,8 +14,8 @@ scoreboard objectives remove death
 scoreboard objectives remove deathTimer
 scoreboard objectives remove deathTimer
 scoreboard objectives remove killStreak
-scoreboard objectives remove nbPlayers
-scoreboard objectives remove nbGeneration
+#scoreboard objectives remove nbPlayers
+#scoreboard objectives remove nbGeneration
 
 
 scoreboard objectives remove motion_x1
@@ -64,8 +67,9 @@ scoreboard objectives add nbGeneration dummy
 gamerule fallDamage false
 gamerule commandBlockOutput false
 gamerule doImmediateRespawn true
+gamerule randomTickSpeed 0
 
-tellraw @a [{"text":"[","color":"white"},{"text":"IceRun","color":"aqua"},{"text":"] LOADED : ","color":"white"},{"text":"Ice Runner","color":"aqua"},{"text":" V2 ","color":"white"},{"text":"by Doriantrn, Binau & Sehnryr.","color":"gray"}]
+tellraw @a [{"text":"[","color":"white"},{"text":"IceRun","color":"aqua"},{"text":"] LOADED : ","color":"white"},{"text":"Ice Runner","color":"aqua"},{"text":" V2 ","color":"white"},{"text":"by Doriantrn.","color":"gray"}]
 
 #--- TEAMS ---#
 team remove orange
@@ -112,3 +116,6 @@ summon villager 9.5 229 -8.5 {Invulnerable:1b,Silent:1b,Tags:["rules_tag"],Custo
 
 kill @e[type=villager,tag=start_tag]
 summon villager -8.5 229 9.5 {Invulnerable:1b,Silent:1b,Tags:["start_tag"],CustomName:'{"text":"Start","color":"red","bold":true}',CustomNameVisible:1b,VillagerData:{profession:"minecraft:nitwit",type:"minecraft:snow"},Attributes:[{Name:generic.movement_speed,Base:0}]}
+
+clear @a
+
