@@ -18,3 +18,6 @@ scoreboard objectives setdisplay sidebar Points
 fill -51 -30 -51 51 150 51 air replace #ice
 kill @e[type=marker,tag=iceblock]
 
+tellraw @a [{"text":"[","color":"white"},{"text":"IceRun","color":"aqua"},{"text":"] ","color":"white"},{"text":"Game started!","color":"green"}]
+tellraw @a [{"text":"[","color":"white"},{"text":"IceRun","color":"aqua"},{"text":"] ","color":"white"},{"text":"You can stop the game at any moment typing ","color":"yellow"},{"text":"/function ir:cancel_game","color":"red","bold":true},{"text":" (OP only)","color":"yellow"}]
+

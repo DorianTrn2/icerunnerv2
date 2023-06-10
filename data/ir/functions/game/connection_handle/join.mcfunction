@@ -1,4 +1,3 @@
-say je suis connecté !
 
 scoreboard players reset @s deathTimer
 scoreboard players reset @s deathTimer2
